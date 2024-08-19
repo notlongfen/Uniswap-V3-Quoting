@@ -6,9 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "install:chain": "curl -L https://foundry.paradigm.xyz | bash && clear && echo $0 | exec && foundryup",
+    "start:chain": "anvil --chain-id 1337 --fork-url"
   },
   "dependencies": {
+    "@metamask/providers": "^17.1.2",
     "@types/tailwindcss": "^3.0.11",
     "@uniswap/sdk-core": "^3.2.3",
     "@uniswap/v3-sdk": "^3.13.1",
